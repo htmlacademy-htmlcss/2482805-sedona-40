@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Юрий](https://up.htmlacademy.ru/htmlcss/40/user/2482805).
-* Наставник: `Неизвестно`.
+* Наставник: [Дина](https://htmlacademy.ru/profile/id1418957).
+* Сайт: [Мой проект "Седона"](https://asdwzxcq.github.io/2482805-sedona-40/).
 
 ---
 
