@@ -35,10 +35,8 @@
             <span class="visually-hidden">Избарнное</span></a>
           <span class="favorite-number">12</span>
         </li>
-        <li class="nav-user-item">
-          <a class="button btn-want-here" href="#">Хочу сюда!</a>
-        </li>
       </ul>
+      <a class="button btn-want-here" href="#">Хочу сюда!</a>
     </nav>
   </header>
   <main class="main-conteiner main-catalog">
@@ -58,7 +56,7 @@
           </ol>
         </nav>
       </div>
-      <h2 class="visually-hidden">Фильтр поиска гостиниц</h2>
+      <h2 class="visually-hidden filter-title">Фильтр поиска гостиниц</h2>
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="checkbox">
           <legend class="checkbox-legend filter-legend">Инфраструктура:</legend>
@@ -206,7 +204,7 @@
       </ul>
       <ul class="pagination">
         <li class="pagination-page pagination-current">
-          <a class="page-link">1</a>
+          <a class="page-current" aria-current="page" href="#">1</a>
         </li>
         <li class="pagination-page">
           <a class="page-link" href="#">2</a>
@@ -218,7 +216,7 @@
           <a class="page-link" href="#">4</a>
         </li>
         <li class="pagination-page pagination-dotbreak">
-          <a class="page-link" href="#">...</a>
+          <a class="page-dotbreak" href="#">...</a>
         </li>
         <li class="pagination-page">
           <a class="page-link" href="#">10</a>
@@ -231,24 +229,24 @@
         бойскаутское!</p>
       <form class="email" action="https://echo.htmlacademy.ru/" method="post">
         <input class="email-field" placeholder="Ваш e-mail" type="email" id="email-field" name="email-fld" required>
-        <button class="button-subscribe button" type="submit">Подписаться</button>
+        <button class="btn-subscribe button" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
   <footer class="page-footer">
-    <ul class="social-links">
+    <ul class="social-links-list">
       <li class="social-item">
-        <a href="https://vk.com/htmlacademy">
+        <a class="social-link" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="social-item">
-        <a href="https://t.me/htmlacademy ">
+        <a class="social-link" href="https://t.me/htmlacademy ">
           <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
       <li class="social-item">
-        <a href="https://www.youtube.com/user/htmlacademyru">
+        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
           <span class="visually-hidden">Youtube</span>
         </a>
       </li>
