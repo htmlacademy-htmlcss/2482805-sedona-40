@@ -10,36 +10,38 @@
 
 <body>
   <header class="page-header">
-    <a class="logo-link" href="index.html">
-      <img class="logo-site" src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
-    </a>
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" aria-current="page" href="#">Гостиницы</a>
-        </li>
-      </ul>
-      <ul class="navigation-user">
-        <li class="nav-user-item">
-          <a class="user-search" href="#">
-            <span class="visually-hidden">Поиск</span></a>
-        </li>
-        <li class="nav-user-item">
-          <a class="user-favorite" href="#">
-            <span class="visually-hidden">Избарнное</span></a>
-          <span class="favorite-number">12</span>
-        </li>
-      </ul>
-      <a class="button btn-want-here" href="#">Хочу сюда!</a>
-    </nav>
+    <div class="page-header-container">
+      <a class="logo-link" href="index.html">
+        <img class="logo-site" src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" aria-current="page" href="#">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-user">
+          <li class="nav-user-item">
+            <a class="user-search" href="#">
+              <span class="visually-hidden">Поиск</span></a>
+          </li>
+          <li class="nav-user-item">
+            <a class="user-favorite" href="#">
+              <span class="visually-hidden">Избарнное</span></a>
+            <span class="favorite-number">12</span>
+          </li>
+        </ul>
+        <a class="button btn-want-here" href="#">Хочу сюда!</a>
+      </nav>
+    </div>
   </header>
-  <main class="main-conteiner main-catalog">
+  <main class="main-container main-catalog">
     <section class="catalog-filter">
       <div class="title-and-bread">
         <h1 class="catalog-title">Гостиницы Седоны</h1>
@@ -117,7 +119,6 @@
         <h2 class="results-title">Найдено гостиниц:
           <span class="numbers">38</span>
         </h2>
-        <div class="select-and-view-box">
           <select class="select-list">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
@@ -141,7 +142,6 @@
               </a>
             </li>
           </ul>
-        </div>
       </div>
       <ul class="hotels-results">
         <li class="hotels-item">
