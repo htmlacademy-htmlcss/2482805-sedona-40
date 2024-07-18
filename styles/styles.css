@@ -725,9 +725,10 @@ body {
 }
 
 .view-link-grid {
-    background-image: url(../images/view-type-icons/grid.svg);
-    background-repeat: no-repeat;
-    background-position: 17px 16px;
+    mask-image: url(../images/view-type-icons/grid.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #333333;
 }
 
 .view-link-cards {
@@ -964,6 +965,7 @@ body {
 /*Футер*/
 .social-links-list {
     display: flex;
+    flex-wrap: wrap;
     width: 142px;
     padding: 0;
     list-style-type: none;
@@ -972,14 +974,17 @@ body {
 
 .social-link {
     display: block;
+    width: 47px;
+    height: 40px;
     color: #000000;
     text-decoration: none;
 }
 
 .social-link-vk {
-    background-image: url(../images/social-icons/vk.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+    mask-image: url(../images/social-icons/vk.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: #83B3D3;
 }
 
 .social-link-telegram {
@@ -1013,6 +1018,7 @@ body {
 
 .academy-link {
     display: block;
+    width: 114px;
     color: #000000;
     text-decoration: none;
     margin: 0;
@@ -1025,14 +1031,16 @@ body {
 /*Конец Футера*/
 
 .visually-hidden {
+  display: block;      
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
   white-space: nowrap;
-    visibility: collapse; 
-    margin: 0;
-    color: initial;
-    visibility: hidden; 
+  color: transparent;
+  visibility: hidden;
+  position: absolute;
+  font-size: 1px;
+  clip: rect(0,0,0,0);
 }
