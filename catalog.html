@@ -65,47 +65,53 @@
           <legend class="checkbox-legend filter-legend">Инфраструктура:</legend>
           <ul class="checkbox-ul">
             <li class="checkbox-list-item">
+              <span class="checkbox-check-field"></span>
               <label class="checkbox-label" for="pool">Бассейн
-                <input class="checkbox-input" type="checkbox" id="pool" name="pool" checked>
+                <input class="checkbox-input visually-hidden" type="checkbox" id="pool" name="pool" checked>
               </label>
             </li>
             <li class="checkbox-list-item">
+              <span class="checkbox-check-field"></span>
               <label class="checkbox-label" for="parking">Парковка
-                <input class="checkpbx-input" type="checkbox" id="parking" name="parking" checked>
+                <input class="checkbox-input visually-hidden" type="checkbox" id="parking" name="parking" checked>
               </label>
             </li>
             <li class="checkbox-list-item">
+              <span class="checkbox-check-field"></span>
               <label class="checkbox-label" for="wi-fi">Wi-Fi
-                <input class="checkpbx-input" type="checkbox" id="wi-fi" name="wi-fi">
+                <input class="checkbox-input visually-hidden" type="checkbox" id="wi-fi" name="wi-fi">
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="radio">
-          <legend class="radio-label filter-legend">Тип Жилья:</legend>
+          <legend class="radio-legend filter-legend">Тип Жилья:</legend>
           <ul class="radio-ul">
             <li class="radio-list-item">
+              <span class="radio-check-field"></span>
               <label class="radio-label" for="hotel">Гостиница
-                <input class="radio-input" type="radio" id="hotel" name="inn" value="hotel" checked>
+                <input class="radio-input visually-hidden" type="radio" id="hotel" name="inn" value="hotel" checked>
               </label>
             </li>
             <li class="radio-list-item">
+              <span class="radio-check-field"></span>
               <label class="radio-label" for="motel">Мотель
-                <input class="radio-input" type="radio" id="motel" name="inn" value="motel">
+                <input class="radio-input visually-hidden" type="radio" id="motel" name="inn" value="motel">
               </label>
             </li>
             <li class="radio-list-item">
+              <span class="radio-check-field"></span>
               <label class="radio-label" for="apartments">Апартаменты
-                <input class="radio-input" type="radio" id="apartments" name="inn" value="apartments">
+                <input class="radio-input visually-hidden" type="radio" id="apartments" name="inn" value="apartments">
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="pricebar">
           <legend class="pricebar-name filter-legend">Стоимость, ₽:</legend>
-          <label class="price-label" for="min-price">от</label>
+          <label class="price-label price-label-min" for="min-price">от</label>
           <input class="price-bar-min" type="number" id="min-price" value="0">
-          <label class="price-label" for="max-price">до</label>
+          <label class="price-label price-label-max" for="max-price">до</label>
           <input class="price-bar-max" type="number" id="max-price" value="9000">
           <input class="price-bar-slider" type="range">
         </fieldset>
@@ -120,12 +126,15 @@
         <h2 class="results-title">Найдено гостиниц:
           <span class="numbers">38</span>
         </h2>
+        <div class="select-list-wrapper">
           <select class="select-list">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="alphabet">По алфавиту</option>
             <option value="raiting">По рейтингу</option>
           </select>
+          <span class="select-arrow"></span>
+        </div>
           <ul class="view-type">
             <li class="list-item">
               <a class="view-link view-link-grid" href="#">
