@@ -49,12 +49,15 @@
         <nav class="bread">
           <ol class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
+              <a class="breadcrumbs-link breadcrumbs-index" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
+            <li class="breadcrumbs-item">
+              <span class="breadcrumbs-arrow"></span>
+            </li>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" aria-current="page">Гостиницы</a>
+              <a class="breadcrumbs-link breadcrumbs-catalog" aria-current="page">Гостиницы</a>
             </li>
           </ol>
         </nav>
@@ -65,21 +68,21 @@
           <legend class="checkbox-legend filter-legend">Инфраструктура:</legend>
           <ul class="checkbox-ul">
             <li class="checkbox-list-item">
-              <span class="checkbox-check-field"></span>
               <label class="checkbox-label" for="pool">Бассейн
                 <input class="checkbox-input visually-hidden" type="checkbox" id="pool" name="pool" checked>
+                <span class="checkbox-check-field"></span>
               </label>
             </li>
             <li class="checkbox-list-item">
-              <span class="checkbox-check-field"></span>
               <label class="checkbox-label" for="parking">Парковка
                 <input class="checkbox-input visually-hidden" type="checkbox" id="parking" name="parking" checked>
+                <span class="checkbox-check-field"></span>
               </label>
             </li>
             <li class="checkbox-list-item">
-              <span class="checkbox-check-field"></span>
               <label class="checkbox-label" for="wi-fi">Wi-Fi
                 <input class="checkbox-input visually-hidden" type="checkbox" id="wi-fi" name="wi-fi">
+                <span class="checkbox-check-field"></span>
               </label>
             </li>
           </ul>
@@ -88,32 +91,44 @@
           <legend class="radio-legend filter-legend">Тип Жилья:</legend>
           <ul class="radio-ul">
             <li class="radio-list-item">
-              <span class="radio-check-field"></span>
               <label class="radio-label" for="hotel">Гостиница
                 <input class="radio-input visually-hidden" type="radio" id="hotel" name="inn" value="hotel" checked>
+                <span class="radio-check-field"></span>
               </label>
             </li>
             <li class="radio-list-item">
-              <span class="radio-check-field"></span>
               <label class="radio-label" for="motel">Мотель
                 <input class="radio-input visually-hidden" type="radio" id="motel" name="inn" value="motel">
+                <span class="radio-check-field"></span>
               </label>
             </li>
             <li class="radio-list-item">
-              <span class="radio-check-field"></span>
               <label class="radio-label" for="apartments">Апартаменты
                 <input class="radio-input visually-hidden" type="radio" id="apartments" name="inn" value="apartments">
+                <span class="radio-check-field"></span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="pricebar">
           <legend class="pricebar-name filter-legend">Стоимость, ₽:</legend>
+          <div class="pricebar-wrapper">
           <label class="price-label price-label-min" for="min-price">от</label>
           <input class="price-bar-min" type="number" id="min-price" value="0">
+        </div>
+        <div class="pricebar-wrapper">
           <label class="price-label price-label-max" for="max-price">до</label>
           <input class="price-bar-max" type="number" id="max-price" value="9000">
-          <input class="price-bar-slider" type="range">
+          </div>
+          <div class="range-wrapper">
+            <button class="range-button-min" type="button">
+              <span class="visually-hidden">Минимальная стоимость</span>
+            </button>
+            <button class="range-button-max" type="button">
+              <span class="visually-hidden">Максимальная стоимость</span>
+            </button>
+            <span class="range-line"></span>
+          </div>
         </fieldset>
         <div class="filter-buttons">
           <button class="button-use" type="submit">Применить</button>
@@ -167,6 +182,7 @@
           <a class="button-details" href="#">Подробнее</a>
           <button class="favorite-btn" type="button">В избранное</button>
           <span class="stars visually-hidden">4 звезды</span>
+          <span class="four-stars"></span>
           <span class="raiting-btn">Рейтинг: 8,5</span>
         </li>
         <li class="hotels-item">
@@ -181,6 +197,7 @@
           <a class="button-details" href="#">Подробнее</a>
           <button class="favorite-btn favorite-btn-checked" type="button">В избранном</button>
           <span class="stars visually-hidden">4 звезды</span>
+          <span class="four-stars"></span>
           <span class="raiting-btn">Рейтинг: 9,2</span>
         </li>
         <li class="hotels-item">
@@ -195,6 +212,7 @@
           <a class="button-details" href="#">Подробнее</a>
           <button class="favorite-btn" type="button">В избранное</button>
           <span class="stars visually-hidden">3 звезды</span>
+          <span class="three-stars"></span>
           <span class="raiting-btn">Рейтинг: 6,9</span>
         </li>
         <li class="hotels-item">
@@ -209,6 +227,7 @@
           <a class="button-details" href="#">Подробнее</a>
           <button class="favorite-btn" type="button">В избранное</button>
           <span class="stars visually-hidden">2 звезды</span>
+          <span class="two-stars"></span>
           <span class="raiting-btn">Рейтинг: 5,0</span>
         </li>
       </ul>

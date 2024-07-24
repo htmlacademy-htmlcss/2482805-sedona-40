@@ -166,40 +166,47 @@
                 <button class="modal-close-btn">
                     <span class="visually-hidden">Закрыть окно поиска гостиницы</span>
                 </button>
-                <fieldset class="modal-date-select">
+                <form class="modal-date-select" method="get">
                     <legend class="modal-date-select-name">Поиск гостинцы в Седоне</legend>
-                    <form class="visit-date-form">
+                    <fieldset class="visit-date-box">
                         <label class="visit-field-name" for="visit-date">Дата Заезда:</label>
                         <input class="visit-date-field" type="text" id="visit-date" value="27 апреля 2020"
                             method="post">
                         <p class="visit-note">Мы не можем отправить вас в прошлое.</p>
-                    </form>
-                    <form class="left-date-form">
+                    </fieldset>
+                    <fieldset class="left-date-box">
                         <label class="left-field-name" for="left-date">Дата Выезда:</label>
                         <input class="left-date-field" type="text" id="left-date" value="1 сентября 2023" method="post">
                         <p class="left-note">На эти даты свободные номера. Пока есть.</p>
-                    </form>
-                    <form class="adult-number-form">
+                    </fieldset>
+                    <fieldset class="adult-number-box">
                         <label class="adult-number-name" for="adult-number">Взрослые:</label>
+                        <button class="btn-adult-con" type="button">
+                            <span class="visually-hidden">Уменьшить количество взрослых</span>
+                        </button>
                         <input class="adult-number-field" type="number" id="adult-number" value="2" required>
-                        <button class="btn-adult-con">
-                            <span classs="visually-hidden">Уменьшить количество взрослых</span>
+                        <button class="btn-adult-plus" type="button">
+                            <span class="visually-hidden">Увеличить количество взрослых</span>
                         </button>
-                        <button class="btn-adult-plus">
-                            <span classs="visually-hidden">Увеличить количество взрослых</span>
-                        </button>
-                    </form>
-                    <form class="children-number-form">
+                    </fieldset>
+                    <fieldset class="children-number-box">
                         <label class="children-number-name" for="children-number">Дети:</label>
+                        <button class="children-info-button" type="button">
+                            <span class="visually-hidden">Информация</span>
+                            <span class="tooltip-info">
+                                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                                размещаются бесплатно.
+                              </span>
+                          </button>
+                        <button class="btn-child-con" type="button">
+                            <span class="visually-hidden">Уменьшить количество детей</span>
+                        </button>
                         <input class="children-number-field" type="number" id="childre-number" value="2" required>
-                        <button class="btn-child-con">
-                            <span classs="visually-hidden">Уменьшить количество детей</span>
+                        <button class="btn-child-plus" type="button">
+                            <span class="visually-hidden">Увеличить количество детей</span>
                         </button>
-                        <button class="btn-child-plus">
-                            <span classs="visually-hidden">Увеличить количество детей</span>
-                        </button>
-                    </form>
-                    <button class="modal-btn-search">Найти</button>
+                    </fieldset>
+                    <button class="modal-btn-search" type="button">Найти</button>
                 </fieldset>
             </div>
         </div>
