@@ -340,12 +340,12 @@ body {
     display: block;
 }
 
-.features-intro-wrapper {
+.service-intro-wrapper {
     width: 1200px;
     padding: 60px 70px;
 }
 
-.features-intro-title {
+.service-intro-title {
     width: 505px;
     font-weight: 700;
     font-size: 30px;
@@ -357,7 +357,7 @@ body {
     text-transform: uppercase;
 }
 
-.features-intro-discription {
+.service-intro-discription {
     width: 490px;
     font-weight: 400;
     font-size: 22px;
@@ -367,14 +367,14 @@ body {
     margin: 0 auto;
 }
 
-.features-list {
+.service-list {
     display: flex;
     width: 1200px;
     list-style-type: none;
     padding: 0;
 }
 
-.features-item {
+.service-item {
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -383,15 +383,15 @@ body {
     justify-content: center;
 }
 
-.features-item-dark {
+.service-item-dark {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.features-item-light {
+.service-item-light {
     background-color: #FFFFFF;
 }
 
-.features-title {
+.service-title {
     position: relative;
     margin: 30px 0;
     padding: 0;
@@ -403,28 +403,28 @@ body {
     text-align: center;
 }
 
-.features-title-home:before {
-    content: url(../images/features/home.svg);
+.service-title-home:before {
+    content: url(../images/service/home.svg);
     width: 75px;
     height: 72px;
     margin: 0 auto;
 }
 
-.features-title-food:before {
-    content: url(../images/features/food.svg);
+.service-title-food:before {
+    content: url(../images/service/food.svg);
     width: 75px;
     height: 72px;
     margin: 0 auto;
 }
 
-.features-title-merch:before {
-    content: url(../images/features/merch.svg);
+.service-title-merch:before {
+    content: url(../images/service/merch.svg);
     width: 75px;
     height: 72px;
     margin: 0 auto;
 }
 
-.features-discription {
+.service-discription {
     margin: 0;
     padding: 0;
     font-weight: 400;

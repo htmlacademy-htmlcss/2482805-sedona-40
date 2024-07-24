@@ -10,7 +10,7 @@
 
 <body>
   <div class="page-container">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <div class="page-header-container">
         <a class="logo-link" href="index.html">
           <img class="logo-site" src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
@@ -42,13 +42,13 @@
         </nav>
       </div>
     </header>
-    <main class="main-container main-index">
-      <section class="index-title-container">
+    <main class="main-container main-index" data-test="main">
+      <section class="index-title-container" data-test="hero">
         <h1 class="visually-hidden index-title">Седона - городок в Аризоне</h1>
         <img class="index-logo" src="images/welcome.svg" width="458" height="352"
           alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!">
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2 class="advantages-intro visually-hidden">Преимущества</h2>
         <div class=advantages-intro-container>
           <p class="advantages-intro-title">Седона — небольшой городок в Аризоне,<br>
@@ -92,26 +92,26 @@
           </li>
         </ul>
       </section>
-      <section class="features">
+      <section class="service">
         <h2 class="visually-hidden">Особенности</h2>
-        <div class="features-intro-wrapper">
-          <p class="features-intro-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</P>
-          <p class="features-intro-discription">Опытный персонал и качественное обслуживание!</p>
+        <div class="service-intro-wrapper">
+          <p class="service-intro-title">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</P>
+          <p class="service-intro-discription">Опытный персонал и качественное обслуживание!</p>
         </div>
-        <ul class="features-list">
-          <li class="features-item features-item-dark features-title-home">
-            <h3 class="features-title">Жильё</h3>
-            <p class="features-discription">Рекомендуем пожить<br> в настоящем мотеле,<br>
+        <ul class="service-list">
+          <li class="service-item service-item-dark service-title-home">
+            <h3 class="service-title">Жильё</h3>
+            <p class="service-discription">Рекомендуем пожить<br> в настоящем мотеле,<br>
               всё как в кино!</p>
           </li>
-          <li class="features-item features-item-light features-title-food">
-            <h3 class="features-title">Еда</h3>
-            <p class="features-discription">Всегда заказывайте<br>
+          <li class="service-item service-item-light service-title-food">
+            <h3 class="service-title">Еда</h3>
+            <p class="service-discription">Всегда заказывайте<br>
               топовый фирменный бургер,<br> вы не разочаруетесь!</p>
           </li>
-          <li class="features-item features-item-dark features-title-merch">
-            <h3 class="features-title">Сувениры</h3>
-            <p class="features-discription">Не только китайского,<br>
+          <li class="service-item service-item-dark service-title-merch">
+            <h3 class="service-title">Сувениры</h3>
+            <p class="service-discription">Не только китайского,<br>
               но и настоящего местного<br> производства!</p>
           </li>
         </ul>
@@ -131,7 +131,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="social-links-list">
         <li class="social-item">
           <a class="social-link social-link-vk" href="https://vk.com/htmlacademy">
