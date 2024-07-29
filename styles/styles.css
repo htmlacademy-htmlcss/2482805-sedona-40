@@ -1348,10 +1348,11 @@ body {
     width: 1060px;
     list-style-type: none;
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 39px;
     margin: 0 auto;
     justify-content: start;
     gap: 20px;
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .hotels-item {
